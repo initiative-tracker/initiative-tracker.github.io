@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: DM View
 ---
 
 <div class="container">
@@ -9,11 +9,9 @@ title: Home
 
     <div class="row">
       <div class="col">
-        <h1>Player 3 <span class="float-right">8 (+1)</span></h1>
+        <h1>DM Dashboard</h1>
       </div>
     </div>
-
-    {% include usereaction.html %}
 
     <div class="row">
       <div class="col">
@@ -21,7 +19,8 @@ title: Home
           <div class="nav nav-tabs" id="nav-tab" role="tablist">
             <p class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-combattable"><span class="oi oi-home"></span></p>
             <p class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-effects"><span class="oi oi-loop-square"></span></p>
-            <p class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-info"><span class="oi oi-person"></span></p>
+            <p class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-actions"><span class="oi oi-bolt"></span></p>
+            <p class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-info"><span class="oi oi-people"></span></p>
           </div>
         </nav>
         <div class="tab-content" id="nav-tabContent">
@@ -31,8 +30,11 @@ title: Home
           <div class="tab-pane fade" id="nav-effects">
             {% include ongoingeffects.html %}
           </div>
+          <div class="tab-pane fade" id="nav-actions">
+            {% include dmactions.html %}            
+          </div>
           <div class="tab-pane fade" id="nav-info">
-            {% include editinfoform.html %}
+            {% include enemyinfo.html %}
           </div>
         </div>
       </div>

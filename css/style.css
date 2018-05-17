@@ -35,6 +35,23 @@ body > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+/* ----------------------------------------------- */
+/* Nav tab styles
+-------------------------------------------------- */
+
+.nav {
+  margin-bottom: 15px;
+}
+
+.btn-group-vertical {
+  margin-top: .5rem;
+}
+
+.btn-group-vertical.btn-group-block {
+  width: 100%;
+}
+
 /* ----------------------------------------------- */
 /* Navbar styles
 -------------------------------------------------- */

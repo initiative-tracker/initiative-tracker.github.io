@@ -1,0 +1,55 @@
+<h3 class="text-center">Actions</h3>
+
+<button type="button" class="btn btn-outline-secondary btn-lg btn-block" data-toggle="modal" data-target="#showMessage">Show Message</button>
+<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Remind Current Player</button>
+<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Finish Turn Override</button>
+<hr>
+<p class="text-center"><small>Combat is in progress</small></p>
+<div class="btn-group-vertical btn-group-lg btn-group-block">
+  <button type="button" class="btn btn-outline-success btn-block" disabled>Begin Combat</button>
+  <button type="button" class="btn btn-outline-danger btn-block" data-toggle="modal" data-target="#endCombatConfirm">End Combat</button>
+</div>
+
+<div class="modal fade" id="showMessage" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Show Message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+         <label>What's your message?</label>
+         <textarea class="form-control" rows="3"></textarea>
+         <small class="form-text text-muted">This message will show up on all players' screens.</small>
+       </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="endCombatConfirm" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">End Combat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Are you sure you want to end this combat? All data will be reset.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">No, cancel</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Yes, end</button>
+      </div>
+    </div>
+  </div>
+</div>
