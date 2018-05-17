@@ -28,7 +28,7 @@ body {
 
 /* Make compatible with fixed-to-top navbar */
 body > .container {
-  padding: 60px 15px 0;
+  padding: 15px 15px 15px;
 }
 
 .footer > .container {
