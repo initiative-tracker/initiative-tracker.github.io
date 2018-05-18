@@ -73,9 +73,18 @@ body > .container {
   padding-right: .75rem;
 }
 
+.card-enemy {
+  padding: .5rem;
+}
+
 /* .btn-delete {
   color: #DC3545;
 } */
+
+.table.card-body td,
+.table.card-body th {
+  border-top: 0;
+}
 
 /* ===================== */
 
@@ -104,6 +113,10 @@ body > .container {
 
 .card-sm .card-header {
   padding: .375rem 1rem;
+}
+
+.enemy-card td:last-child {
+  text-align: right;
 }
 
 /* ----------------------------------------------- */
