@@ -68,6 +68,17 @@ body > .container {
   margin-bottom: 0;
 }
 
+.card-header {
+  padding-left: .75rem;
+  padding-right: .75rem;
+}
+
+/* .btn-delete {
+  color: #DC3545;
+} */
+
+/* ===================== */
+
 .btn-xs {
   font-size: .75rem;
   padding: .2rem .4rem;
@@ -95,21 +106,72 @@ body > .container {
   padding: .375rem 1rem;
 }
 
+/* ----------------------------------------------- */
+/* Table styles
+-------------------------------------------------- */
+.initiative-table td:nth-child(2),
+.initiative-table th:nth-child(2) {
+  text-align: center;
+}
+
+.initiative-table td:last-child,
+.initiative-table th:last-child {
+  text-align: right;
+}
+
+/* ----------------------------------------------- */
+/* Badge styles
+-------------------------------------------------- */
 .effect-badge {
   color: transparent;
   margin-top: 5px;
   margin-right: 10px;
 }
 
-/* ----------------------------------------------- */
-/* Table styles
--------------------------------------------------- */
-td:nth-child(2),
-th:nth-child(2) {
-  text-align: center;
+.color-picker .row {
+  margin-bottom: .75rem;
 }
 
-td:last-child,
-th:last-child {
-  text-align: right;
+.color-picker .col {
+  padding-right: 0;
+}
+
+.badge-swatch {
+  border: 3px solid;
+  border-color: white;
+}
+
+.badge-swatch:hover {
+  border-color: #007BFF;
+}
+
+.badge-brown {
+  background-color: sienna;
+}
+.badge-red {
+  background-color: red;
+}
+.badge-orange {
+  background-color: darkorange;
+}
+.badge-yellow {
+  background-color: gold;
+}
+.badge-lightgreen {
+  background-color: forestgreen;
+}
+.badge-darkgreen {
+  background-color: turquoise;
+}
+.badge-lightblue {
+  background-color: deepskyblue;
+}
+.badge-darkblue {
+  background-color: royalblue;
+}
+.badge-purple {
+  background-color: mediumpurple;
+}
+.badge-pink {
+  background-color: hotpink;
 }
