@@ -115,8 +115,23 @@ body > .container {
   padding: .375rem 1rem;
 }
 
-.enemy-card td:last-child {
+.enemy-card td:last-child,
+.player-card td:last-child {
   text-align: right;
+}
+
+/* .enemy-card td:first-child,
+.player-card td:first-child {
+  font-weight: bold;
+} */
+
+.enemy-card td,
+.player-card td {
+  font-style: italic;
+}
+
+.section-header {
+  margin-bottom: 1rem;
 }
 
 /* ----------------------------------------------- */
