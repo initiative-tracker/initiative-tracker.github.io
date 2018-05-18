@@ -4,8 +4,7 @@ title: DM View
 ---
 
 <div class="container">
-    <!-- <h1>Angular App Layout</h1> -->
-    {% include alerts.html %}
+    <!-- {% include alerts.html %} -->
 
     <div class="row">
       <div class="col">
@@ -16,7 +15,7 @@ title: DM View
     <div class="row">
       <div class="col">
         <nav>
-          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <div class="nav nav-tabs nav-dash" id="nav-tab" role="tablist">
             <p class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-combattable"><span class="oi oi-home"></span></p>
             <p class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-effects"><span class="oi oi-loop-square"></span></p>
             <p class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-actions"><span class="oi oi-bolt"></span></p>
@@ -28,10 +27,10 @@ title: DM View
             {% include combatordertable.html %}
           </div>
           <div class="tab-pane fade" id="nav-effects">
-            {% include ongoingeffects.html %}
+            {% include ongoingeffects-dm.html %}
           </div>
           <div class="tab-pane fade" id="nav-actions">
-            {% include dmactions.html %}            
+            {% include dmactions.html %}
           </div>
           <div class="tab-pane fade" id="nav-info">
             {% include enemyinfo.html %}

@@ -45,7 +45,7 @@ body > .container {
 /* Nav tab styles
 -------------------------------------------------- */
 
-.nav {
+.nav-dash {
   margin-bottom: 15px;
 }
 
@@ -55,4 +55,61 @@ body > .container {
 
 .btn-group-vertical.btn-group-block {
   width: 100%;
+}
+
+/* ----------------------------------------------- */
+/* Card styles
+-------------------------------------------------- */
+.card {
+  margin-top: 10px;
+}
+
+.card .table {
+  margin-bottom: 0;
+}
+
+.btn-xs {
+  font-size: .75rem;
+  padding: .2rem .4rem;
+}
+
+.btn-xs .oi {
+  position: static;
+}
+
+.card-sm {
+  font-size: 1em;
+}
+
+.card-sm .table {
+  font-size: .75em;
+}
+
+.card-sm .table th,
+.card-sm .table td {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.card-sm .card-header {
+  padding: .375rem 1rem;
+}
+
+.effect-badge {
+  color: transparent;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+/* ----------------------------------------------- */
+/* Table styles
+-------------------------------------------------- */
+td:nth-child(2),
+th:nth-child(2) {
+  text-align: center;
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
 }
