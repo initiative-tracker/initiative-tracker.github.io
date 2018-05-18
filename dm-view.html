@@ -4,11 +4,11 @@ title: DM View
 ---
 
 <div class="container">
-    <!-- {% include alerts.html %} -->
+    {% include alert-waiting.html %}
 
     <div class="row">
       <div class="col">
-        <h1>DM Dashboard</h1>
+        <h2>DM Dashboard</h2>
       </div>
     </div>
 
@@ -24,7 +24,7 @@ title: DM View
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-combattable">
-            {% include combatordertable.html %}
+            {% include combatordertable-dm.html %}
           </div>
           <div class="tab-pane fade" id="nav-effects">
             {% include ongoingeffects-dm.html %}

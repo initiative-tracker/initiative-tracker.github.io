@@ -8,8 +8,8 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+  /* Margin bottom by footer height + whitespace above footer*/
+  margin-bottom: 75px;
   height: 100%;
 }
 
@@ -109,9 +109,31 @@ body > .container {
 /* ----------------------------------------------- */
 /* Table styles
 -------------------------------------------------- */
-.initiative-table td:nth-child(2),
-.initiative-table th:nth-child(2) {
+.initiative-table td,
+.initiative-table th {
   text-align: center;
+}
+
+.initiative-table td:first-child,
+.initiative-table th:first-child {
+  /* padding-left: 0; */
+  padding-right: 0;
+}
+
+.initiative-dm-table td:nth-child(2),
+.initiative-dm-table th:nth-child(2) {
+  padding-left: .5rem;
+}
+
+.icon-sm {
+  font-size: .8rem;
+}
+
+.initiative-table td:first-child,
+.initiative-table th:first-child,
+.initiative-dm-table td:nth-child(2),
+.initiative-dm-table th:nth-child(2) {
+  text-align: left;
 }
 
 .initiative-table td:last-child,
@@ -120,8 +142,19 @@ body > .container {
 }
 
 /* ----------------------------------------------- */
+/* Misc styles
+-------------------------------------------------- */
+.combat-message {
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------------- */
 /* Badge styles
 -------------------------------------------------- */
+.badge-ability {
+  font-size: 1rem;
+}
+
 .effect-badge {
   color: transparent;
   margin-top: 5px;
@@ -137,8 +170,10 @@ body > .container {
 }
 
 .badge-swatch {
-  border: 3px solid;
+  border: 4px solid;
   border-color: white;
+  font-size: 1.2rem;
+  margin-right: 0;
 }
 
 .badge-swatch:hover {
@@ -158,10 +193,10 @@ body > .container {
   background-color: gold;
 }
 .badge-lightgreen {
-  background-color: forestgreen;
+  background-color: yellowgreen;
 }
 .badge-darkgreen {
-  background-color: turquoise;
+  background-color: forestgreen;
 }
 .badge-lightblue {
   background-color: deepskyblue;
@@ -174,4 +209,12 @@ body > .container {
 }
 .badge-pink {
   background-color: hotpink;
+}
+
+.badge-disabled {
+  top: 8px;
+  left: 3px;
+  font-size: 1.1rem;
+  color: black;
+  border-radius: 10rem;
 }
