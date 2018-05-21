@@ -2,10 +2,11 @@
 
 $(document).ready(function() {
 
-  if ("vibrate" in navigator) {
-    navigator.vibrate(1000);
-  }
-
   $('#yourTurnModal').modal('show');
+
+  $('#yourTurnModal').on('shown.bs.modal', function (event) {
+    navigator.vibrate(1000);
+    console.log("vibrate");
+  });
 
 });
