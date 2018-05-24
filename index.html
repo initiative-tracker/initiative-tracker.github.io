@@ -4,37 +4,28 @@ title: Home
 ---
 
 <div class="container">
-    <!-- {% include alerts.html %} -->
-
-    <div class="row">
-      <div class="col">
-        <h1>Player 3 <span class="float-right">8 (+1)</span></h1>
-      </div>
-    </div>
-
-    {% include usereaction.html %}
-
-    <div class="row">
-      <div class="col">
-        <nav>
-          <div class="nav nav-tabs nav-dash" id="nav-tab" role="tablist">
-            <p class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-combattable"><span class="oi oi-home"></span></p>
-            <p class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-effects"><span class="oi oi-loop-square"></span></p>
-            <p class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-info"><span class="oi oi-person"></span></p>
-          </div>
-        </nav>
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="nav-combattable">
-            {% include combatordertable.html %}
-          </div>
-          <div class="tab-pane fade" id="nav-effects">
-            {% include ongoingeffects-player.html %}
-          </div>
-          <div class="tab-pane fade" id="nav-info">
-            {% include editinfoform.html %}
-          </div>
+  <div class="card">
+  <h1 class="card-header text-center">D&amp;D 5E <br>Initiative Tracker</h1>
+    <div class="card-body">
+      <h3 class="card-title">Welcome!</h3>
+      <p class="card-text">Please enter the information below before proceeding to the app.</p>
+      <hr>
+      <form>
+        <div class="form-group">
+          <label>Player Name</label>
+          <input type="email" class="form-control" placeholder="Player name...">
+          <small id="emailHelp" class="form-text text-muted">(Your name goes here)</small>
         </div>
-      </div>
+        <div class="form-group">
+          <label>Character Name</label>
+          <input type="password" class="form-control" placeholder="Character name...">
+        </div>
+        <div class="form-group">
+          <label>Initiative Bonus</label>
+          <input type="number" class="form-control" placeholder="Initiative bonus...">
+        </div>
+        <a href="p1view.html" class="btn btn-lg btn-block btn-outline-primary">Enter</a>
+      </form>
     </div>
-
   </div>
+</div>

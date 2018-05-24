@@ -169,11 +169,19 @@ body > .container {
   text-align: right;
 }
 
+.initiative-table-empty td[colspan="3"] {
+  text-align: center;
+}
+
 /* ----------------------------------------------- */
 /* Misc styles
 -------------------------------------------------- */
 .combat-message {
   margin-bottom: 0;
+}
+
+.modal-visible {
+  display: block;
 }
 
 /* ----------------------------------------------- */
